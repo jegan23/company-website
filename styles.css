@@ -1,0 +1,194 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-family: 16px;
+    background-color: #f3f3f3;
+}
+
+/*NAVIGATION*/
+
+header {
+    position: fixed;                       /*the container will stick there*/
+    top: 0;
+    width: 100%;                           /*balance the container. Do this for all*/
+    border-bottom: solid 1px black;
+    background-color: white;
+    z-index: 2;                            /*to pop out*/
+}
+
+header .content {
+    display: flex;                         /*to fit the text in one whole width*/
+    align-items: center;                   /*to center the text*/
+
+} 
+
+header  figure {
+    flex: 1;                               /*takes in the full witdth*/
+    margin: auto;
+}
+
+header nav ul {
+    list-style: none;                      /*removes the dot*/
+    display: flex;                         /*fit in the container width*/ 
+}
+
+nav li {
+    padding-left: 3.5rem;                  /*space in between*/
+    padding-right: 1.10rem;                /*doesnt touch the end*/
+}
+
+nav a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;                 /*no underline*/
+}
+
+.mission {
+    display: flex;                         /*fits in the container width*/
+    align-items: center;                   /*center the container*/
+    justify-content: center;               /*center the text*/
+    position: relative;                    /*independent position*/
+    top: 3.7rem;                           /*does not overlap the nav*/
+    height: 43.5rem;                       /*height of the container*/
+    width: 100%;                           /*balance the width*/
+    background-image: url(pictures/logo-background.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 70%;           /*picture will move 0 leftright and 70% down*/
+    background-size: cover;
+    border-bottom: solid 1px black;
+
+}
+
+.header h1 {
+    text-align: center;
+    position: relative;                     /*to make the text independent*/
+    bottom: 6.25rem;                        /*make it go up*/
+    font-size: 3rem;
+}
+
+.header h3 {
+    text-align: center;
+    font-size: x-large;
+}
+
+.button {
+    text-align: center;
+    font-weight: 600;
+}
+
+/*PRODUCTS*/
+
+#Products {
+    position: relative;
+    top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+#products-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    position: relative;
+    padding: 2%;
+    background-color: #f3f3f3;
+ 
+}
+
+.row1 {
+    flex: 1;
+    padding: 2rem;
+    padding-bottom: 0;
+    margin: 2rem 1.25rem;
+    background-color: white;
+    text-align: center;
+    
+}
+
+.row1 .image-container {
+    margin: 0 auto;
+}
+
+
+.row1 h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row2 {
+    flex: 1;
+    padding: 2rem;
+    padding-bottom: 0;
+    margin: 2rem 1.25rem;
+    background-color: white;
+    text-align: center;
+}
+
+.row2 .image-container {
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+}
+
+
+.row2 h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*TEAM*/
+
+#team {
+    position: relative;
+    bottom: 3rem;
+    text-align: center;
+    font-size: 2rem; 
+}
+
+.team-container {
+    position: relative;
+    bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.col3 {
+    display: inline-flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .col3 {
+        display: block;
+    }
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #9b9b9b;
+    padding: 1.5rem 2rem;
+    bottom: 0%;
+}
+
+footer .content {
+    color: white;
+    display: flex;
+    font-size: .75rem;
+}
+
+footer .copyright {
+    flex-grow: 1;
+}
